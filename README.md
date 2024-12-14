@@ -1,4 +1,4 @@
-## Claim Form Application
+## Claim Form Applications
  LIVE - https://claim-form.vercel.app/
 
 ## Overview
