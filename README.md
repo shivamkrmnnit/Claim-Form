@@ -116,13 +116,13 @@ claim-form/
 The dashboard has been built with responsiveness in mind, ensuring a smooth experience across different screen sizes.
 
 - Desktop View: The layout adjusts to use larger screens effectively, with form fields and file upload sections arranged for easy navigation.
- ![Screenshot 2024-12-14 165809](https://github.com/user-attachments/assets/d0d311ea-6b85-4d3d-9684-c828eab00e58)
+![laptop](https://github.com/user-attachments/assets/8b4f03b4-0490-4ce8-9b84-9bd77187c50b)
 
 - Tablet View: The layout adjusts to a smaller screen, with elements stacking vertically for better accessibility and usability.
-  ![Screenshot 2024-12-14 165939](https://github.com/user-attachments/assets/e46d7952-0a3f-4668-89ac-8161cf62bb9e)
+  ![iphone](https://github.com/user-attachments/assets/b487021c-177b-4fee-947b-bac6a8816a7e)
  - iPad pro
 - Mobile View: The design is optimized for mobile, with touch-friendly elements, stacked form fields, and file upload buttons.
-![Screenshot 2024-12-14 170021](https://github.com/user-attachments/assets/031f0b69-4da1-4680-a949-881ca9230c59)
+  ![iPad](https://github.com/user-attachments/assets/5651f8de-fb6a-45b3-89a1-1334030a993c)
 - iPhone 12 pro
 # Responsive Approach
 - Media Queries: Used CSS media queries to ensure the layout adapts to different screen sizes.
