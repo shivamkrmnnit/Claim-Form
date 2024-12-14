@@ -1,5 +1,5 @@
-## Claim Form Application
- LIVE - https://form-frontend-rise11.vercel.app/
+## Claim Form Applications
+ LIVE - https://claim-form.vercel.app/
 
 ## Overview
 
