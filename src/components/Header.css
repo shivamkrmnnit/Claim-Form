@@ -1,0 +1,138 @@
+/* General container for the progress navbar */
+.progress-navbar {
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 10px 0;
+  flex-wrap: wrap; /* Allow wrapping on smaller screens */
+}
+
+/* Styling for each step in the navbar */
+.step {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  cursor: pointer;
+  flex: 1;
+  position: relative;
+  margin: 0 10px; /* Add some space between steps */
+}
+
+/* Circle styles for each step */
+.step .circle {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #e0e0e0; /* Light gray for inactive steps */
+  color: #666; /* Gray color for the text */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 5px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+/* Active step circle styles */
+.step.active .circle.completed {
+  background-color: #007bff; /* Blue for active/completed steps */
+  color: #fff; /* White text when completed */
+}
+
+/* Label styles under each step number */
+.step .label {
+  font-size: 12px;
+  color: #666; /* Gray color for the labels */
+}
+
+/* Time text for steps that have time information */
+.step .time {
+  font-size: 10px;
+  color: #aaa; /* Light gray for time text */
+}
+
+/* Progress line between steps */
+.progress-line {
+  position: absolute;
+  top: 15px; /* Positioned just below the circles */
+  left: 0;
+  height: 4px; /* Thickness of the progress line */
+  background-color: #007bff; /* Blue progress line */
+  z-index: -1;
+  transition: width 0.3s ease;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .progress-navbar {
+    padding: 10px;
+    justify-content: center; /* Center steps on smaller screens */
+  }
+
+  .step {
+    flex: 1 0 30%; /* Reduce width to 30% of the parent for smaller screens */
+    margin: 0 5px; /* Reduce space between steps */
+  }
+
+  .step .circle {
+    width: 25px;
+    height: 25px; /* Smaller circle on smaller screens */
+    font-size: 12px; /* Smaller font size */
+  }
+
+  .step .label {
+    font-size: 10px; /* Smaller label font size */
+  }
+
+  .step .time {
+    font-size: 8px; /* Smaller time font size */
+  }
+  
+  /* Adjust progress line width on smaller screens */
+  .progress-line {
+    top: 30px;
+  }
+}
+
+@media (max-width: 480px) {
+  .progress-navbar {
+    padding: 8px;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .step {
+    flex: 1 0 50%; /* Each step takes up 50% of the width */
+    margin-bottom: 15px;
+  }
+
+  .step .circle {
+    width: 20px;
+    height: 20px; /* Even smaller circle on very small screens */
+    font-size: 10px; /* Smaller font size */
+  }
+
+  .step .label {
+    font-size: 8px; /* Further reduce label size */
+  }
+
+  .step .time {
+    font-size: 6px; /* Smaller time font size */
+  }
+
+  .progress-line {
+    top: 50px;
+    width: 90%; /* Adjust the progress line width */
+  }
+}
+.label-top {
+  font-weight: bold;
+  color: black;
+  font-size: 18px;
+}
+
+
