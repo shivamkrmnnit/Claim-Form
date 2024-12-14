@@ -100,56 +100,56 @@ function ClaimForm() {
   return (
     <div className="claim-form">
       <h2>File your Claim.
-      <span className="form-duration"> (Approx 5 min)</span>
+        <span className="form-duration"> (Approx 5 min)</span>
       </h2>
-      
+
       <div className="blue-line"></div>
       <form onSubmit={handleSubmit}>
         <div className="fields-container">
           {/* Claim Value Section */}
-          <div className="field claim-value"style={{ color: '#181717ac', fontSize: '18px', fontWeight: 'bold' }}>
+          <div className="field claim-value" style={{ color: '#181717ac', fontSize: '18px', fontWeight: 'bold' }}>
             <label>
-              <FontAwesomeIcon icon={faMoneyBill1} size="lg"className="fa-icon" /> Claim Value
+              <FontAwesomeIcon icon={faMoneyBill1} size="lg" className="fa-icon" /> Claim Value
             </label>
             <div className="claim-value-container">
               <div className="field">
                 <label>
-                <p style={{ color: '#181717ac', fontSize: '14px', fontWeight: 'bold' }}>Contract Value</p>
+                  <p style={{ color: '#181717ac', fontSize: '14px', fontWeight: 'bold' }}>Contract Value</p>
                 </label>
                 <div className="claim-input-container">
-                <input
-                  type="number"
-                  placeholder="10,00,00 USD"
-                  value={contractValue}
-                  onChange={handleContractValueChange}
-                  required
-                />
-                <select value={contractCurrency} onChange={handleContractCurrencyChange} required>
-                  <option value="USD">USD</option>
-                  <option value="INR">INR</option>
-                  <option value="EUR">EUR</option>
-                </select>
+                  <input
+                    type="number"
+                    placeholder="10,00,00 USD"
+                    value={contractValue}
+                    onChange={handleContractValueChange}
+                    required
+                  />
+                  <select value={contractCurrency} onChange={handleContractCurrencyChange} required>
+                    <option value="USD">USD</option>
+                    <option value="INR">INR</option>
+                    <option value="EUR">EUR</option>
+                  </select>
                 </div>
                 {/* {!isContractValueValid && <span className="error-message">Contract value is required.</span>} */}
               </div>
 
               <div className="field">
-              <label><p style={{ color: '#181717ac', fontSize: '14px', fontWeight: 'bold' }}>Contract Value</p>
-              </label>
-              <div className="claim-input-container">
-  <input
-    type="number"
-    placeholder="15,00,00 USD"
-    value={claimValue}
-    onChange={handleClaimValueChange}
-    required
-  />
-  <select value={claimCurrency} onChange={handleClaimCurrencyChange} required>
-    <option value="USD">USD</option>
-    <option value="INR">INR</option>
-    <option value="EUR">EUR</option>
-  </select>
-</div>
+                <label><p style={{ color: '#181717ac', fontSize: '14px', fontWeight: 'bold' }}>Contract Value</p>
+                </label>
+                <div className="claim-input-container">
+                  <input
+                    type="number"
+                    placeholder="15,00,00 USD"
+                    value={claimValue}
+                    onChange={handleClaimValueChange}
+                    required
+                  />
+                  <select value={claimCurrency} onChange={handleClaimCurrencyChange} required>
+                    <option value="USD">USD</option>
+                    <option value="INR">INR</option>
+                    <option value="EUR">EUR</option>
+                  </select>
+                </div>
 
                 {/* {!isClaimValueValid && <span className="error-message">Claim value is required.</span>} */}
                 <p style={{ color: 'orange', fontSize: '12px' }}>150% of Contract Value</p>
@@ -158,9 +158,9 @@ function ClaimForm() {
           </div>
 
           {/* Place Section */}
-          <div className="field place"style={{ color: '#181717ac', fontSize: '18px', fontWeight: 'bold' }}>
+          <div className="field place" style={{ color: '#181717ac', fontSize: '18px', fontWeight: 'bold' }}>
             <label>
-              <FontAwesomeIcon icon={faMapMarkerAlt} size="lg" className="fa-icon"/> Place
+              <FontAwesomeIcon icon={faMapMarkerAlt} size="lg" className="fa-icon" /> Place
             </label>
             <select value={place} onChange={handlePlaceChange} required>
               <option value="">Select a valid city in India</option>
@@ -175,8 +175,8 @@ function ClaimForm() {
             )}
             <div className="place-question">
               <label>
-              <p style={{ color: '#181717ac', fontSize: '14px', fontWeight: 'bold' }}>Is this place for the proceeding the one mentioned in the agreement?</p>
-                </label>
+                <p style={{ color: '#181717ac', fontSize: '14px', fontWeight: 'bold' }}>Is this place for the proceeding the one mentioned in the agreement?</p>
+              </label>
               <div className="radio-buttons">
                 <label>
                   <input
@@ -186,7 +186,7 @@ function ClaimForm() {
                     checked={isPlaceForProceeding === "yes"}
                     onChange={handlePlaceProceedingChange}
                   />
-                  
+
                 </label>Yes
                 <label>
                   <input
@@ -196,7 +196,7 @@ function ClaimForm() {
                     checked={isPlaceForProceeding === "no"}
                     onChange={handlePlaceProceedingChange}
                   />
-                 
+
                 </label> No
               </div>
             </div>
@@ -205,7 +205,7 @@ function ClaimForm() {
           {/* Language Section */}
           <div className="field language" style={{ color: '#181717ac', fontSize: '18px', fontWeight: 'bold' }}>
             <label>
-              <FontAwesomeIcon icon={faLanguage} size="lg"className="fa-icon" /> Language
+              <FontAwesomeIcon icon={faLanguage} size="lg" className="fa-icon" /> Language
             </label>
             <select value={language} onChange={handleLanguageChange} required>
               <option value="">Select a valid language</option>
@@ -220,10 +220,10 @@ function ClaimForm() {
             )}
             <div className="language-question">
               <label>
-              <p style={{ color: '#181717ac', fontSize: '14px', fontWeight: 'bold' }}> Is the language for the proceedings the one mentioned in the agreement?</p>
+                <p style={{ color: '#181717ac', fontSize: '14px', fontWeight: 'bold' }}> Is the language for the proceedings the one mentioned in the agreement?</p>
 
-                
-               </label>
+
+              </label>
               <div className="radio-buttons">
                 <label>
                   <input
@@ -233,7 +233,7 @@ function ClaimForm() {
                     checked={isLanguageForProceeding === "yes"}
                     onChange={handleLanguageProceedingChange}
                   />
-                 
+
                 </label> Yes
                 <label>
                   <input
@@ -243,7 +243,7 @@ function ClaimForm() {
                     checked={isLanguageForProceeding === "no"}
                     onChange={handleLanguageProceedingChange}
                   />
-                 
+
                 </label> No
               </div>
             </div>
@@ -255,34 +255,34 @@ function ClaimForm() {
 
         {/* File Upload Section */}
         <div className="inline-fields">
-          <label>
-            <FontAwesomeIcon icon={faFileAlt} size="lg" className="fa-icon"/> Statement
+          <label className="stment">
+            <FontAwesomeIcon icon={faFileAlt} size="lg" className="fa-icon" /> Statement
             <UploadCard title="Upload a Pdf" onFileChange={(file) => handleFileChange(0, { target: { files: [file] } })} />
           </label>
 
           <label>
-  <FontAwesomeIcon icon={faFileContract} size="lg" className="fa-icon"/> Agreement under Disputes
-  <div className="inline-upload-cards">
-    <UploadCard title="Upload the contract" onFileChange={(file) => handleFileChange(1, { target: { files: [file] } })} />
-    <UploadCard title="Arbitration Agreement" onFileChange={(file) => handleFileChange(2, { target: { files: [file] } })} />
-  </div>
-</label>
+            <FontAwesomeIcon icon={faFileContract} size="lg" className="fa-icon" /> Agreement under Disputes
+            <div className="inline-upload-cards">
+              <UploadCard title="Upload the contract" onFileChange={(file) => handleFileChange(1, { target: { files: [file] } })} />
+              <UploadCard title="Arbitration Agreement" onFileChange={(file) => handleFileChange(2, { target: { files: [file] } })} />
+            </div>
+          </label>
 
           <label>
-          
-            <FontAwesomeIcon icon={faPlus} size="lg" className="fa-icon"/> Additional Documentation
+
+            <FontAwesomeIcon icon={faPlus} size="lg" className="fa-icon" /> Additional Documentation
             <div className="inline-upload-cards">
-            {fileInputs.map((file, index) => (
-              <UploadCard key={index} title="Upload the Contract" onFileChange={(file) => handleFileChange(index, { target: { files: [file] } })} />
-            ))}
-            <button type="button" className="add-file-button" onClick={handleAddFileInput}>
-              <FontAwesomeIcon icon={faPlus} /> 
-            </button></div>
+              {fileInputs.map((file, index) => (
+                <UploadCard key={index} title="Upload the Contract" onFileChange={(file) => handleFileChange(index, { target: { files: [file] } })} />
+              ))}
+              <button type="button" className="add-file-button" onClick={handleAddFileInput}>
+                <FontAwesomeIcon icon={faPlus} />
+              </button></div>
           </label>
         </div>
 
-         {/* <button type="submit">Submit</button> */}
-       </form> 
+        {/* <button type="submit">Submit</button> */}
+      </form>
     </div>
   );
 }
