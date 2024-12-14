@@ -119,10 +119,11 @@ The dashboard has been built with responsiveness in mind, ensuring a smooth expe
 ![laptop](https://github.com/user-attachments/assets/8b4f03b4-0490-4ce8-9b84-9bd77187c50b)
 
 - Tablet View: The layout adjusts to a smaller screen, with elements stacking vertically for better accessibility and usability.
-  ![iphone](https://github.com/user-attachments/assets/b487021c-177b-4fee-947b-bac6a8816a7e)
+  ![iPad](https://github.com/user-attachments/assets/5651f8de-fb6a-45b3-89a1-1334030a993c)
+
  - iPad pro
 - Mobile View: The design is optimized for mobile, with touch-friendly elements, stacked form fields, and file upload buttons.
-  ![iPad](https://github.com/user-attachments/assets/5651f8de-fb6a-45b3-89a1-1334030a993c)
+    ![iphone](https://github.com/user-attachments/assets/b487021c-177b-4fee-947b-bac6a8816a7e)
 - iPhone 12 pro
 # Responsive Approach
 - Media Queries: Used CSS media queries to ensure the layout adapts to different screen sizes.
